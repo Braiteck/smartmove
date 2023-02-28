@@ -1,0 +1,474 @@
+@media print,
+(max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 25px;
+    }
+
+
+    .cont
+    {
+        padding: 0 20px;
+    }
+
+
+    .block.bg,
+    .block.bg2
+    {
+        padding: 50px 0 55px;
+    }
+
+
+
+    .wheelSlider-container.with_dots
+    {
+        padding-bottom: 48px;
+    }
+
+
+    .wheelSlider-container .slide.prev
+    {
+        left: -30%;
+    }
+
+    .wheelSlider-container .slide.prev_prev
+    {
+        left: -60%;
+    }
+
+
+    .wheelSlider-container .slide.next
+    {
+        left: 30%;
+    }
+
+    .wheelSlider-container .slide.next_next
+    {
+        left: 60%;
+    }
+
+
+    .wheelSlider-container .wheelSlider-arrow[data-action='prev']
+    {
+        margin-right: 112px;
+    }
+
+    .wheelSlider-container .wheelSlider-arrow[data-action='next']
+    {
+        margin-left: 112px;
+    }
+
+
+    .wheelSlider-container .dots button + button
+    {
+        margin-left: 12px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .cont
+    {
+        min-height: 60px;
+    }
+
+
+    header .mob_menu_btn
+    {
+        margin-left: 15px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 25px;
+    }
+
+    .block_head .title br
+    {
+        display: none;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns
+    {
+        --form_columns_offset: 30px;
+    }
+
+    .form .line
+    {
+        margin-bottom: 15px;
+    }
+
+    .form .input
+    {
+        font-size: 15px;
+
+        height: 49px;
+    }
+
+
+    .form .bottom
+    {
+        padding-top: 15px;
+    }
+
+    .form .bottom .agree
+    {
+        max-width: calc(100% - 165px);
+    }
+
+
+    .form .submit_btn
+    {
+        font-size: 14px;
+        line-height: 18px;
+
+        min-height: 49px;
+        padding: 0 30px;
+
+        border-radius: 25px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .cont
+    {
+        padding-top: 30px;
+        padding-bottom: 150px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: var(--font_size_title);
+    }
+
+    .first_section .desc
+    {
+        font-size: 16px;
+
+        width: 360px;
+        margin: 20px auto 0;
+    }
+
+
+    .first_section .btns
+    {
+        margin-top: 25px;
+    }
+
+    .first_section .btn
+    {
+        font-size: 14px;
+        line-height: 18px;
+
+        min-width: 240px;
+        min-height: 49px;
+        padding: 0 30px;
+
+        border-radius: 25px;
+    }
+
+
+    .first_section .bg
+    {
+        bottom: -50px;
+
+        height: calc(100% - 150px);
+    }
+
+
+
+    /*----------------------
+        Businesses types
+    ----------------------*/
+    .businesses_types .row > *
+    {
+        width: calc(33.333% - 30px);
+    }
+
+
+
+    /*-------------
+        History
+    -------------*/
+    .history .item .photo
+    {
+        top: -20px;
+        left: 30px;
+
+        width: 92px;
+        height: 92px;
+    }
+
+
+    .history .item .data
+    {
+        width: 100%;
+        padding: 30px;
+    }
+
+
+    .history .item .title
+    {
+        font-size: 17px;
+
+        display: flex;
+
+        min-height: 42px;
+        padding-left: 118px;
+
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .history .item .text
+    {
+        font-size: 13px;
+    }
+
+    .history .item .author
+    {
+        font-size: 13px;
+
+        margin-top: 20px;
+    }
+
+
+    .history .item .data .line1
+    {
+        top: 5px;
+        right: 40px;
+
+        width: 56px;
+    }
+
+    .history .item .data .line2
+    {
+        right: 5px;
+        bottom: 5px;
+
+        width: 57px;
+        height: 25px;
+    }
+
+
+
+    /*-----------
+        Facts
+    -----------*/
+    .facts .row > *
+    {
+        width: calc(100% - 100px);
+        margin-bottom: 20px;
+    }
+
+
+    .facts .item .icon
+    {
+        width: 35px;
+        height: 35px;
+    }
+
+    .facts .item .name
+    {
+        width: calc(100% - 50px);
+    }
+
+
+
+    /*-------------
+        Clients
+    -------------*/
+    .clients .data
+    {
+        padding: 30px;
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps .data
+    {
+        padding: 30px;
+    }
+
+    .steps .data + .data
+    {
+        margin-top: 30px;
+    }
+
+
+    .steps .data .title
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews
+    {
+        padding-top: 50px;
+    }
+
+
+    .reviews .swiper-container
+    {
+        padding-bottom: 42px;
+    }
+
+
+    .reviews .review
+    {
+        padding: 28px;
+    }
+
+    .reviews .review .socials
+    {
+        margin-top: 20px;
+    }
+
+
+
+    /*----------------------
+        We do everything
+    ----------------------*/
+    .we_do_everything .row > *
+    {
+        width: calc(100% - 1px);
+    }
+
+
+    .we_do_everything .item .thumb,
+    .we_do_everything .item:nth-child(odd) .thumb,
+    .we_do_everything .item:nth-child(even) .thumb
+    {
+        border-radius: 10px;
+    }
+
+
+    .we_do_everything .item .name
+    {
+        padding: 24px 30px;
+    }
+
+    .we_do_everything .item .desc
+    {
+        padding: 20px 30px 0;
+    }
+
+
+    .we_do_everything .btns
+    {
+        margin-top: 30px;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form .form
+    {
+        padding: 30px;
+    }
+
+
+
+    /*-------------
+        Letters
+    -------------*/
+    .letters .wheelSlider-container
+    {
+        width: 240px;
+    }
+
+
+    .letters .item .name
+    {
+        font-size: 17px;
+        line-height: 21px;
+
+        margin-top: 20px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .menu
+    {
+        margin-bottom: 10px;
+    }
+
+
+    footer .menu .line
+    {
+        display: flex;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    footer .menu .line + .line
+    {
+        margin-top: 0;
+    }
+
+    footer .menu .line > *,
+    footer .menu .line > *:nth-child(4n+1),
+    footer .menu .line > *:nth-child(4n+2),
+    footer .menu .line > *:nth-child(4n+3)
+    {
+        display: block;
+
+        width: 50%;
+        min-width: 50%;
+        margin-bottom: 15px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .fancybox-slide--html
+    {
+        padding: 20px;
+    }
+
+
+    .modal
+    {
+        width: 380px;
+        padding: 50px;
+    }
+}

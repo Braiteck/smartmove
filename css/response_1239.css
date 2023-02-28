@@ -1,0 +1,282 @@
+@media print, (max-width: 1239px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 32px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 60px;
+    }
+
+    .block.bg,
+    .block.bg2
+    {
+        padding: 60px 0 70px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .menu .item + .item
+    {
+        margin-left: 30px;
+    }
+
+    header .menu .item > button
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+    .block_head .desc
+    {
+        margin-top: 20px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------
+        More
+    ----------*/
+    .more
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .cont
+    {
+        min-height: 480px;
+    }
+
+
+    .first_section .info
+    {
+        width: 500px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: calc(var(--font_size_title) + 3px);
+    }
+
+    .first_section .desc
+    {
+        font-size: 18px;
+
+        margin-top: 30px;
+    }
+
+    .first_section .btns
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*-------------
+        History
+    -------------*/
+    .history
+    {
+        margin-bottom: 60px;
+        padding-top: 60px;
+    }
+
+
+    .history .item .data
+    {
+        padding: 45px 60px 45px 145px;
+    }
+
+
+
+    /*-----------
+        Facts
+    -----------*/
+    .facts .row
+    {
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .facts .row > *
+    {
+        width: 20%;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+
+    .facts .item
+    {
+        padding: 30px 20px;
+    }
+
+    .facts .item .icon
+    {
+        margin-bottom: 20px;
+    }
+
+    .facts .item br
+    {
+        display: none;
+    }
+
+
+
+    /*-------------
+        Clients
+    -------------*/
+    .clients .data
+    {
+        padding: 60px 40px 35px;
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps .data
+    {
+        padding: 40px 50px 50px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews
+    {
+        padding-top: 60px;
+    }
+
+    .reviews .swiper-container
+    {
+        padding-bottom: 52px;
+    }
+
+
+    .reviews .review
+    {
+        padding: 45px 60px;
+    }
+
+
+
+    /*----------------------
+        We do everything
+    ----------------------*/
+    .we_do_everything .item .desc
+    {
+        padding: 20px 20px 0;
+    }
+
+
+    .we_do_everything .btns
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*-------------
+        Tariffs
+    -------------*/
+    .tariffs .swiper-container
+    {
+        padding-bottom: 52px;
+    }
+
+    .tariffs .swiper-button-prev
+    {
+        left: -25px;
+    }
+
+    .tariffs .swiper-button-next
+    {
+        right: -25px;
+    }
+
+
+    .tariffs .tariff
+    {
+        padding: 25px;
+    }
+
+    .tariffs .tariff .name
+    {
+        font-size: 17px;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form .form
+    {
+        width: 500px;
+        padding: 40px 50px 50px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 40px 0;
+    }
+
+
+    footer .col_left,
+    footer .contacts
+    {
+        order: 2;
+    }
+
+
+    footer .menu
+    {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+}

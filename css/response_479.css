@@ -1,0 +1,329 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .wheelSlider-container .slide.prev
+    {
+        left: -25%;
+    }
+
+    .wheelSlider-container .slide.prev_prev
+    {
+        left: -50%;
+    }
+
+
+    .wheelSlider-container .slide.next
+    {
+        left: 25%;
+    }
+
+    .wheelSlider-container .slide.next_next
+    {
+        left: 50%;
+    }
+
+
+    .wheelSlider-container .wheelSlider-arrow[data-action='prev']
+    {
+        margin-right: 124px;
+    }
+
+    .wheelSlider-container .wheelSlider-arrow[data-action='next']
+    {
+        margin-left: 124px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .logo img
+    {
+        width: 111px;
+    }
+
+
+    header .phone
+    {
+        font-size: 12px;
+    }
+
+    header .phone .icon
+    {
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+    }
+
+
+    header .email
+    {
+        font-size: 11px;
+    }
+
+
+    header .mob_menu_btn
+    {
+        margin-left: 10px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+    .form .bottom .agree
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .form .bottom .submit
+    {
+        width: 100%;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion .item
+    {
+        padding: 0 20px 0 40px;
+    }
+
+    .accordion .item .head
+    {
+        padding: 15px 20px 15px 0;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .desc
+    {
+        font-size: 14px;
+
+        width: 280px;
+    }
+
+
+    .first_section .bg
+    {
+        bottom: -20px;
+
+        height: calc(100% - 200px);
+
+        background-position: calc(100% + 30px) 100%;
+    }
+
+
+
+    /*----------------------
+        Businesses types
+    ----------------------*/
+    .businesses_types .row > *
+    {
+        width: calc(50% - 30px);
+    }
+
+
+
+    /*-------------
+        History
+    -------------*/
+    .history .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .history .item .data
+    {
+        padding: 25px 20px;
+    }
+
+
+    .history .item .photo
+    {
+        left: 20px;
+    }
+
+
+    .history .item .title
+    {
+        font-size: 15px;
+
+        min-height: 48px;
+        padding-left: 112px;
+    }
+
+
+
+    /*-------------
+        Clients
+    -------------*/
+    .clients .data
+    {
+        padding: 25px;
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps .data
+    {
+        padding: 25px;
+    }
+
+    .steps .data .title
+    {
+        font-size: 17px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .review
+    {
+        padding: 23px;
+    }
+
+
+    .reviews .review .author
+    {
+        font-size: 17px;
+
+        padding-left: 115px;
+    }
+
+
+
+    /*-------------
+        Tariffs
+    -------------*/
+    .tariffs .tariff
+    {
+        padding: 25px;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form .form
+    {
+        padding: 25px;
+    }
+
+
+
+    /*-------------
+        Letters
+    -------------*/
+    .letters .wheelSlider-container
+    {
+        width: 180px;
+    }
+
+
+    .letters .item .name
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .menu button
+    {
+        font-size: 13px;
+    }
+
+
+    footer .logo img
+    {
+        width: 103px;
+    }
+
+
+    footer .copyright
+    {
+        font-size: 10px;
+
+        margin-top: 8px;
+    }
+
+
+    footer .phone
+    {
+        font-size: 14px;
+    }
+
+    footer .phone .icon
+    {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+    }
+
+
+    footer .location
+    {
+        font-size: 11px;
+
+        margin-top: 10px;
+    }
+
+    footer .location .icon
+    {
+        margin-right: 6px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 40px;
+    }
+
+    .modal_title
+    {
+        margin-bottom: 15px;
+    }
+
+    .tariffs .swiper-button-next,
+    .tariffs .swiper-button-prev
+    {
+        display: block;
+    }
+}

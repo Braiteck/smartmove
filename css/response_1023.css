@@ -1,0 +1,611 @@
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 30px;
+    }
+
+
+    .cont
+    {
+        padding: 0 30px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 55px;
+    }
+
+    .block.bg,
+    .block.bg2
+    {
+        padding: 55px 0 60px;
+    }
+
+
+    .wheelSlider-container.with_dots
+    {
+        padding-bottom: 56px;
+    }
+
+
+    .wheelSlider-container .slide.prev
+    {
+        left: -42%;
+    }
+
+    .wheelSlider-container .slide.prev_prev
+    {
+        left: -84%;
+    }
+
+
+    .wheelSlider-container .slide.next
+    {
+        left: 42%;
+    }
+
+    .wheelSlider-container .slide.next_next
+    {
+        left: 84%;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .cont
+    {
+        min-height: 70px;
+    }
+
+
+    header .logo
+    {
+        margin-right: auto;
+    }
+
+
+    header .mob_menu_btn
+    {
+        display: flex;
+    }
+
+
+    header .menu
+    {
+        position: absolute;
+        top: calc(100% + 10px);
+        right: 20px;
+
+        visibility: hidden;
+
+        width: 202px;
+        padding: 20px 35px;
+
+        transition: .2s linear;
+
+        opacity: 0;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0 11px 35px 0 rgba(0, 0, 0, .15);
+    }
+
+    header .menu:before
+    {
+        position: absolute;
+        right: 13px;
+        bottom: 100%;
+
+        display: block;
+
+        width: 14px;
+        height: 7px;
+
+        content: '';
+
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid #fff;
+        border-left: 7px solid transparent;
+    }
+
+    header .menu.show
+    {
+        visibility: visible;
+
+        opacity: 1;
+    }
+
+    header .menu .item
+    {
+        width: 100%;
+    }
+
+    header .menu .item > button
+    {
+        min-height: 0;
+
+        text-align: left;
+
+        justify-content: flex-start;
+    }
+
+    header .menu .item + .item
+    {
+        margin-left: 0;
+    }
+
+    header .menu .item > button
+    {
+        padding: 10px 0;
+    }
+
+    header .menu .item > button:after
+    {
+        top: auto;
+        bottom: 7px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 30px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------
+        More
+    ----------*/
+    .more
+    {
+        margin-top: 30px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .cont
+    {
+        min-height: 0;
+        padding-top: 40px;
+        padding-bottom: 270px;
+    }
+
+
+    .first_section .info
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .first_section .title
+    {
+        font-size: calc(var(--font_size_title) + 5px);
+    }
+
+    .first_section .title br
+    {
+        display: none;
+    }
+
+
+    .first_section .desc
+    {
+        width: 560px;
+        max-width: 100%;
+        margin: 25px auto 0;
+    }
+
+
+    .first_section .btns
+    {
+        margin-top: 30px;
+
+        justify-content: center;
+    }
+
+
+    .first_section .bg
+    {
+        bottom: -55px;
+
+        height: calc(100% - 100px);
+
+        background-position: 100% 100%;
+    }
+
+
+
+    /*----------------------
+        Businesses types
+    ----------------------*/
+    .businesses_types .row
+    {
+        margin-bottom: -30px;
+        margin-left: -30px;
+    }
+
+    .businesses_types .row > *
+    {
+        width: calc(20% - 30px);
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+
+
+    .businesses_types .item
+    {
+        font-size: 13px;
+    }
+
+    .businesses_types .item .icon
+    {
+        width: 89px;
+        height: 89px;
+        margin: 0 auto 20px;
+    }
+
+    .businesses_types .item .icon img.lines.lines1
+    {
+        bottom: -7px;
+        left: -6px;
+
+        width: 91px;
+    }
+
+    .businesses_types .item .icon img.lines.lines2
+    {
+        top: -6px;
+        right: -6px;
+
+        width: 91px;
+    }
+
+    .businesses_types .item .icon img.lines.lines3
+    {
+        bottom: -6px;
+        left: -1px;
+
+        width: 93px;
+    }
+
+    .businesses_types .item .icon img.lines.lines4
+    {
+        right: -6px;
+        bottom: -1px;
+
+        width: 83px;
+    }
+
+    .businesses_types .item .icon img.lines.lines5
+    {
+        top: -6px;
+        right: -6px;
+
+        width: 97px;
+    }
+
+
+
+    /*-------------
+        History
+    -------------*/
+    .history
+    {
+        margin-bottom: 50px;
+        padding-top: 50px;
+    }
+
+
+    .history .block_head
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .history .swiper-container
+    {
+        padding-bottom: 42px;
+    }
+
+
+    .history .item
+    {
+        min-height: 0;
+    }
+
+    .history .item .photo
+    {
+        top: 30px;
+
+        width: 160px;
+        height: 160px;
+    }
+
+
+    .history .item .data
+    {
+        width: calc(100% - 70px);
+        padding: 45px 45px 45px 135px;
+    }
+
+    .history .item .text
+    {
+        margin-top: 20px;
+    }
+
+
+
+    /*-----------
+        Facts
+    -----------*/
+    .facts .row
+    {
+        margin-bottom: -20px;
+        margin-left: -100px;
+    }
+
+    .facts .row > *
+    {
+        width: calc(50% - 100px);
+        margin-bottom: 20px;
+        margin-left: 100px;
+    }
+
+
+    .facts .item
+    {
+        display: flex;
+
+        padding: 0;
+
+        border-radius: 0;
+
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .facts .item:hover
+    {
+        background: none;
+        box-shadow: none;
+    }
+
+
+    .facts .item .icon
+    {
+        width: 51px;
+        height: auto;
+        margin: 0;
+
+        justify-content: center;
+    }
+
+    .facts .item .name
+    {
+        width: calc(100% - 66px);
+    }
+
+
+
+    /*-------------
+        Clients
+    -------------*/
+    .clients .data
+    {
+        padding: 40px 40px 30px;
+    }
+
+
+    .clients .swiper-container
+    {
+        padding-bottom: 32px;
+    }
+
+    .clients .swiper-button-next,
+    .clients .swiper-button-prev
+    {
+        bottom: 32px;
+    }
+
+
+    .clients .item
+    {
+        height: 90px;
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps .data + .data
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews
+    {
+        padding-top: 55px;
+    }
+
+
+    .reviews .review
+    {
+        padding: 40px;
+    }
+
+
+    .reviews .review .photo
+    {
+        position: absolute;
+
+        width: 92px;
+        height: 92px;
+    }
+
+    .reviews .review .photo img.lines
+    {
+        bottom: -6px;
+        left: 6px;
+
+        width: 78px;
+    }
+
+    .reviews .review .photo + .info
+    {
+        width: 100%;
+    }
+
+
+    .reviews .review .author
+    {
+        display: flex;
+
+        min-height: 92px;
+        padding-left: 122px;
+
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .reviews .review .author > *
+    {
+        width: 100%;
+    }
+
+
+
+    /*----------------------
+        We do everything
+    ----------------------*/
+    .we_do_everything .row > *
+    {
+        width: calc(50% - 1px);
+    }
+
+
+    .we_do_everything .item:nth-child(odd) .thumb
+    {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .we_do_everything .item:nth-child(even) .thumb
+    {
+        border-radius: 0 10px 10px 0;
+    }
+
+
+    .we_do_everything .item .desc
+    {
+        padding: 24px 28px 0;
+    }
+
+
+
+    /*-------------
+        Tariffs
+    -------------*/
+    .tariffs.bg
+    {
+        padding-bottom: 50px;
+    }
+
+
+    .tariffs .swiper-container
+    {
+        padding-bottom: 42px;
+    }
+
+
+    .tariffs .tariff
+    {
+        padding: 30px;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form .block_head
+    {
+        width: 100%;
+        margin: 0 0 30px !important;
+
+        text-align: center;
+
+        justify-content: center;
+    }
+
+    .action_form .block_head .title
+    {
+        width: 100%;
+    }
+
+
+    .action_form .form
+    {
+        width: 100%;
+        padding: 50px 70px 70px;
+    }
+
+
+
+    /*-------------
+        Letters
+    -------------*/
+    .letters .wheelSlider-container
+    {
+        width: 286px;
+    }
+
+
+    .letters .item .name
+    {
+        font-size: 18px;
+        line-height: 22px;
+
+        margin-top: 28px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .fancybox-slide--html
+    {
+        padding: 30px;
+    }
+}
