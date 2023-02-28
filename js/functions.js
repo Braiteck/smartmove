@@ -28,7 +28,7 @@ $(() => {
 
 
 	// Fancybox
-	$.fancybox.defaults.hash = false
+	/*$.fancybox.defaults.hash = false
 	$.fancybox.defaults.backFocus = false
 	$.fancybox.defaults.autoFocus = false
 	$.fancybox.defaults.animationEffect = 'zoom'
@@ -49,19 +49,17 @@ $(() => {
 			SHARE: "Поделиться",
 			ZOOM: "Увеличить"
 		}
-	}
+	}*/
 
 	// Всплывающие окна
 	$('body').on('click', '.modal_link', function (e) {
 		e.preventDefault()
+		Fancybox.close()
 
-		$.fancybox.close(true)
-
-		$.fancybox.open({
+		Fancybox.show([{
 			src: $(this).data('content'),
-			type: 'inline',
-			touch: false
-		})
+			type: 'inline'
+		}])
 	})
 
 

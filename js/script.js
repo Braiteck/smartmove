@@ -58,13 +58,13 @@ jQuery(function($){
     });*/
 
     document.addEventListener( 'wpcf7mailsent', function( event ) {
-        $.fancybox.close(true)
+        Fancybox.close()
 
-        $.fancybox.open({
-            src:"#thanks",
-            type: 'inline',
-            touch: false
-        })
+        Fancybox.show([{
+            src: "#thanks",
+            type: 'inline'
+        }])
+        
     }, false );
 
 
