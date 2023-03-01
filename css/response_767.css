@@ -196,7 +196,8 @@
     /*-----------------------
         We will take over
     -----------------------*/
-    .we_take_over .image
+    .we_take_over .image,
+    .we_take_over .image.is_stuck
     {
         width: 100%;
         height: auto;

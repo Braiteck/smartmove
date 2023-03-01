@@ -251,15 +251,15 @@
     }
 
 
-    .we_take_over .image
+    .we_take_over .image,
+    .we_take_over .image.is_stuck
     {
         position: relative;
+        top: 0 !important;
 
         width: 300px;
         height: 200px;
         margin-left: 0;
-
-        transform: none !important;
     }
 
     .we_take_over .image:after
