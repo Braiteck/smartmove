@@ -181,6 +181,23 @@ $(() => {
 	})
 
 
+	// Плавная прокрутка к якорю
+	const scrollBtns = document.querySelectorAll('.scroll_btn')
+
+	if (scrollBtns) {
+		scrollBtns.forEach(element => {
+			element.addEventListener('click', e => {
+				e.preventDefault()
+
+				let anchor = element.getAttribute('data-anchor')
+
+				document.getElementById(anchor).scrollIntoView({
+					behavior: 'smooth',
+					block: 'start'
+				}, 1000)
+			})
+		})
+	}
 })
 
 
@@ -230,4 +247,52 @@ $(window).on('load', () => {
 			}
 		}
 	})
+
+
+	// Мы возьмём на себя
+	offsetStart = $('.we_take_over .item.first .image').offset().top - ($(window).height() / 2) + $('.we_take_over .image').outerHeight() / 2
+	offsetFinish = $('.we_take_over').offset().top + $('.we_take_over').outerHeight() - ($(window).height() / 2) - $('.we_take_over .item.first .image').outerHeight() / 2
+
+
+	inView.offset($('.we_take_over .item').outerHeight())
+
+	if ($('.we_take_over .item').length) {
+		inView('.we_take_over .item')
+			.on('enter', el => {
+				let currentIndex = $(el).index()
+
+				if ($('.we_take_over .item.first .image img').eq(currentIndex).css('display') != 'block') {
+					$('.we_take_over .item.first .image img').hide()
+					$('.we_take_over .item.first .image img').eq(currentIndex).fadeIn(300)
+
+					$('.we_take_over .anchors .btn').removeClass('active')
+					$('.we_take_over .anchors .btn').eq(currentIndex).addClass('active')
+				}
+			})
+	}
+})
+
+
+$(window).on('scroll', () => {
+	// Мы возьмём на себя
+	if(typeof offsetStart != 'undefined' && typeof offsetFinish != 'undefined') {
+		let = scrollTop = $(window).scrollTop()
+
+		if(scrollTop > offsetStart && scrollTop < offsetFinish) {
+			$('.we_take_over .item.first .image').removeClass('bottom')
+			$('.we_take_over .item.first .image').addClass('is_stuck')
+
+			$('.we_take_over .item.first .image').css({
+				'top': $(window).height() / 2 - $('.we_take_over .image').outerHeight() / 2
+			})
+		} else if(scrollTop > offsetFinish) {
+			$('.we_take_over .item.first .image').addClass('bottom')
+			$('.we_take_over .item.first .image').removeClass('is_stuck')
+			$('.we_take_over .item.first .image').css({ 'top': 0 })
+		} else {
+			$('.we_take_over .item.first .image').removeClass('bottom')
+			$('.we_take_over .item.first .image').removeClass('is_stuck')
+			$('.we_take_over .item.first .image').css({ 'top': 0 })
+		}
+	}
 })

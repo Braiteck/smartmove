@@ -73,31 +73,87 @@
     -------------------*/
     .first_section .cont
     {
-        min-height: 480px;
-    }
-
-
-    .first_section .info
-    {
-        width: 500px;
+        min-height: 0;
+        padding-top: 48px;
+        padding-bottom: 60px;
     }
 
 
     .first_section .title
     {
-        font-size: calc(var(--font_size_title) + 3px);
+        font-size: var(--font_size_title);
     }
 
-    .first_section .desc
-    {
-        font-size: 18px;
 
+    .first_section ul
+    {
         margin-top: 30px;
     }
 
-    .first_section .btns
+    .first_section ul li
     {
-        margin-top: 40px;
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+
+    .first_section .btn
+    {
+        font-size: 14px;
+        line-height: 18px;
+
+        padding: 16px 32px;
+    }
+
+
+    .first_section .bg
+    {
+        width: 135%;
+        height: auto;
+    }
+
+
+
+    /*-----------------------
+        We will take over
+    -----------------------*/
+    .we_take_over .item + .item
+    {
+        margin-top: 60px;
+    }
+
+
+    .we_take_over .image
+    {
+        width: 380px;
+        height: 300px;
+        margin-left: 48px;
+    }
+
+
+    .we_take_over .anchors
+    {
+        margin-right: 28px;
+    }
+
+
+    .we_take_over .item
+    {
+        scroll-margin-top: calc(50vh - 150px);
+    }
+
+
+    .we_take_over .info
+    {
+        width: calc(100% - 524px);
+        min-height: 300px;
+    }
+
+
+    .we_take_over .info .title
+    {
+        font-size: 23px;
+        line-height: 29px;
     }
 
 

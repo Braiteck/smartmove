@@ -3,6 +3,12 @@
     /*-------------------
         Global styles
     -------------------*/
+    :root
+    {
+        --font_size_title: 24px;
+    }
+
+
     .wheelSlider-container .slide.prev
     {
         left: -25%;
@@ -118,21 +124,41 @@
     /*-------------------
         First section
     -------------------*/
-    .first_section .desc
+    .first_section .btn
     {
-        font-size: 14px;
-
-        width: 280px;
+        padding: 12px 28px;
     }
 
 
     .first_section .bg
     {
-        bottom: -20px;
+        margin-top: -16px;
+    }
 
-        height: calc(100% - 200px);
 
-        background-position: calc(100% + 30px) 100%;
+
+    /*-----------------------
+        We will take over
+    -----------------------*/
+    .we_take_over .item + .item
+    {
+        margin-top: 25px;
+    }
+
+
+    .we_take_over .info .title
+    {
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+
+    .we_take_over .info .desc
+    {
+        font-size: 13px;
+        line-height: 16px;
+
+        margin-top: 10px;
     }
 
 
