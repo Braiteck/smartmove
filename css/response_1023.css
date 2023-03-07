@@ -163,10 +163,10 @@
     }
 
 
-
-    /*------------------
-        Form elements
-    ------------------*/
+    .block_head .title br
+    {
+        display: none;
+    }
 
 
 
@@ -654,6 +654,89 @@
     {
         width: 100%;
         padding: 50px 70px 70px;
+    }
+
+
+
+    /*----------
+        Calc
+    ----------*/
+    .calc .data
+    {
+        margin-top: 133px;
+    }
+
+
+    .calc .item .info
+    {
+        width: calc(100% - 354px);
+    }
+
+
+    .calc .item .label
+    {
+        width: calc(100% - 100px);
+    }
+
+    .calc .item .label.tablet_full_w
+    {
+        width: 100%;
+    }
+
+    .calc .item .label br
+    {
+        display: none;
+    }
+
+
+    .calc .item .range
+    {
+        width: 100%;
+        margin-top: 36px;
+        padding-bottom: 12px;
+    }
+
+    .calc .item .price,
+    .calc .item .checkbox
+    {
+        width: 80px;
+    }
+
+
+    .calc .business .select
+    {
+        position: absolute;
+        right: 0;
+        bottom: 100%;
+        left: 0;
+
+        width: 462px;
+        max-width: calc(86vw - 40px);
+        margin: 0 auto 40px;
+    }
+
+
+    .irs-single,
+    .irs-from,
+    .irs-to
+    {
+        font-size: 12px;
+        line-height: 15px;
+
+        margin-bottom: 13px;
+    }
+
+
+    .calc .bottom .total_price .price
+    {
+        margin-left: 5px;
+    }
+
+
+    .calc .bottom .btn
+    {
+        width: 294px;
+        padding: 19px 48px;
     }
 
 

@@ -197,8 +197,11 @@
         We will take over
     -----------------------*/
     .we_take_over .image,
-    .we_take_over .image.is_stuck
+    .we_take_over .image.is_stuck,
+    .we_take_over .image.bottom
     {
+        position: relative;
+
         width: 100%;
         height: auto;
         margin-bottom: 15px;
@@ -428,6 +431,85 @@
     .action_form .form
     {
         padding: 30px;
+    }
+
+
+
+    /*----------
+        Calc
+    ----------*/
+    .calc .data
+    {
+        padding-bottom: 10px;
+    }
+
+
+    .calc .item .info
+    {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+
+    .calc .item .exp
+    {
+        width: calc(100% - 20px);
+        margin: 12px 10px 0;
+        padding: 18px 20px;
+
+        border-radius: 5px;
+    }
+
+
+    .calc .item + .item .info,
+    .calc .item + .item .exp
+    {
+        border: none;
+    }
+
+
+    .calc .item .label .mob_title,
+    .calc .item .exp .mob_title
+    {
+        display: block;
+    }
+
+
+    .calc .business .info
+    {
+        padding: 0;
+    }
+
+    .calc .business .label,
+    .calc .business .exp
+    {
+        display: none;
+    }
+
+
+
+    .calc .bottom
+    {
+        padding: 24px;
+    }
+
+
+    .calc .bottom .total_price
+    {
+        width: 100%;
+        margin-bottom: 12px;
+
+        text-align: center;
+
+        justify-content: center;
+    }
+
+
+    .calc .bottom .btn
+    {
+        margin-right: auto;
+        margin-left: auto;
     }
 
 

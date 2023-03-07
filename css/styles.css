@@ -113,6 +113,7 @@ button
     --font_size: 14px;
     --font_size_title: 35px;
     --font_family: 'Montserrat', 'Arial', sans-serif;
+    --font_family2: 'Inter', 'Arial', sans-serif;
 }
 
 
@@ -2658,6 +2659,472 @@ header .mob_menu_btn.active span:after
     max-width: 100%;
     margin: 0 !important;
 }
+
+
+
+/*----------
+    Calc
+----------*/
+.calc .data
+{
+    position: relative;
+
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 15px 39px rgba(0, 0, 0, .05);
+}
+
+
+
+.calc .item
+{
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+.calc .item:first-child .exp
+{
+    border-top-right-radius: 10px;
+}
+
+.calc .item:last-child .exp
+{
+    border-bottom-right-radius: 10px;
+}
+
+
+.calc .item .info
+{
+    display: flex;
+
+    width: calc(100% - 450px);
+    padding: 42px 50px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.calc .item + .item .info
+{
+    border-top: 1px solid #e8eefb;
+}
+
+
+.calc .item .label
+{
+    font-size: 14px;
+    line-height: 17px;
+
+    width: calc(100% - 400px);
+}
+
+
+.calc .item .label .mob_title
+{
+    color: #a3a9b9;
+    font-size: 11px;
+    line-height: 13px;
+
+    display: none;
+
+    margin-bottom: 4px;
+}
+
+
+.calc .item .select,
+.calc .item .range,
+.calc .item .price,
+.calc .item .checkbox
+{
+    position: relative;
+
+    width: 350px;
+    max-width: 100%;
+    margin-left: auto;
+}
+
+
+.calc .item .price
+{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+
+    text-align: center;
+}
+
+.calc .item .price.grey
+{
+    color: #a3a9b9;
+}
+
+
+.calc .item .checkbox
+{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.calc .item .checkbox input
+{
+    display: none;
+}
+
+
+.calc .item .checkbox label
+{
+    color: #a3a9b9;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+
+    position: relative;
+
+    display: flex;
+
+    min-height: 26px;
+    padding-left: 36px;
+
+    cursor: pointer;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.calc .item .checkbox label > *
+{
+    pointer-events: none;
+}
+
+
+.calc .item .checkbox .check
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+
+    width: 26px;
+    height: 26px;
+
+    border: 1px solid #eaebf1;
+    border-radius: 3px;
+    background: #f7f8fa;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.calc .item .checkbox .check img
+{
+    position: relative;
+    top: -1px;
+
+    display: block;
+
+    width: 13px;
+    height: 13px;
+
+    transition: opacity .2s linear;
+
+    opacity: 0;
+}
+
+.calc .item .checkbox input:checked + .check img
+{
+    opacity: 1;
+}
+
+
+.calc .item .exp
+{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+
+    display: flex;
+
+    width: 450px;
+    max-width: 100%;
+    margin-left: auto;
+    padding: 25px 50px;
+
+    background: #e0ecfa;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.calc .item + .item .exp
+{
+    border-top: 1px solid #fff;
+}
+
+
+.calc .item .exp .mob_title
+{
+    color: #0066d5;
+    font-size: 11px;
+    line-height: 13px;
+
+    display: none;
+
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+
+.calc .item .exp .logo
+{
+    color: #0066d5;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+
+    width: 100%;
+}
+
+
+.calc .item .exp .price_label
+{
+    width: calc(100% - 140px);
+}
+
+
+.calc .item .exp .price
+{
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 28px;
+
+    width: 112px;
+
+    white-space: nowrap;
+}
+
+
+.calc select
+{
+    display: none;
+}
+
+
+.calc .nice-select
+{
+    display: block;
+
+    cursor: pointer;
+}
+
+
+.calc .nice-select .current
+{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 49px;
+
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    height: 53px;
+    padding-right: 51px;
+    padding-left: 19px;
+
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    border: 1px solid #0066d5;
+    border-radius: 100px;
+    background: #fff;
+    box-shadow: 0 10px 32px rgba(0, 102, 213, .24);
+}
+
+
+.calc .nice-select-dropdown
+{
+    color: #232323;
+
+    position: absolute;
+    z-index: 9;
+    top: calc(100% + 2px);
+    right: 0;
+
+    visibility: hidden;
+    overflow: hidden;
+
+    width: 100%;
+    padding: 8px 0;
+
+    transition: .2s linear;
+
+    opacity: 0;
+    border: 1px solid #0066d5;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 10px 32px rgba(0, 102, 213, .24);
+}
+
+.calc .nice-select.open .nice-select-dropdown
+{
+    visibility: visible;
+
+    opacity: 1;
+}
+
+
+.calc .nice-select .list .option
+{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+
+    padding: 8px 19px;
+
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.calc .nice-select .list .option:empty,
+.calc .nice-select .list .option.selected
+{
+    display: none;
+}
+
+
+.calc .nice-select ~ .icon
+{
+    color: #0066d5;
+
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    right: 20px;
+    bottom: 0;
+
+    display: block;
+
+    width: 12px;
+    height: 9px;
+    margin: auto;
+
+    pointer-events: none;
+}
+
+
+
+.calc .business .info
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.calc .business .label
+{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+
+.calc .business .select
+{
+    margin-left: auto;
+}
+
+
+
+.calc .candidate_cost .exp
+{
+    display: none;
+}
+
+.calc .candidate_cost .exp.active
+{
+    display: flex;
+}
+
+
+
+.calc .bottom
+{
+    position: relative;
+    z-index: 3;
+
+    display: flex;
+
+    margin-top: 10px;
+    padding: 50px;
+
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 15px 39px rgba(0, 0, 0, .05);
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.calc .bottom .total_price
+{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+}
+
+
+.calc .bottom .total_price .price
+{
+    color: #0066d5;
+    font-family: var(--font_family2);
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 28px;
+
+    margin-left: 21px;
+
+    white-space: nowrap;
+}
+
+
+.calc .bottom .btn
+{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19px;
+
+    margin-left: auto;
+    padding: 19px 28px;
+
+    border-radius: 100px;
+    background: linear-gradient(90deg, #0066d5 0%, #8ec0f5 100%);
+    box-shadow: 0 10px 32px rgba(0, 102, 213, .24);
+}
+
 
 
 

@@ -267,6 +267,35 @@
 
 
 
+    /*----------
+        Calc
+    ----------*/
+    .calc .item .exp
+    {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+
+    .calc .item .exp .price_label
+    {
+        width: calc(100% - 112px);
+    }
+
+    .calc .item .exp .price
+    {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+
+    .calc .bottom .btn
+    {
+        padding: 12px 40px;
+    }
+
+
+
     /*-------------
         Letters
     -------------*/

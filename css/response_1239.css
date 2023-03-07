@@ -308,6 +308,59 @@
 
 
 
+    /*----------
+        Calc
+    ----------*/
+    .calc .item .info
+    {
+        width: calc(100% - 354px);
+        padding: 25px 30px;
+    }
+
+
+    .calc .item .label
+    {
+        width: calc(100% - 320px);
+    }
+
+
+    .calc .item .select,
+    .calc .item .range,
+    .calc .item .price,
+    .calc .item .checkbox
+    {
+        width: 290px;
+    }
+
+
+    .calc .item .exp
+    {
+        width: 354px;
+        padding: 25px 30px;
+    }
+
+
+    .calc .item .exp .price_label
+    {
+        width: calc(100% - 124px);
+    }
+
+
+    .calc .business .info,
+    .calc .business .exp
+    {
+        padding-top: 40px;
+    }
+
+
+
+    .calc .bottom
+    {
+        padding: 30px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

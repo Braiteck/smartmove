@@ -26,8 +26,9 @@
 		<meta name="theme-color" content="#0066d5">
 
 		<!-- Подключение шрифтов с гугла -->
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 		<!-- Подключение файлов стилей -->
 		<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
@@ -35,6 +36,7 @@
 		<link rel="stylesheet" href="css/swiper.css">
 		<link rel="stylesheet" href="css/fancybox.css">
 		<link rel="stylesheet" href="css/wheelSlider.css">
+		<link rel="stylesheet" href="css/ion.rangeSlider.css">
 		<link rel="stylesheet" href="css/styles.css">
 
 		<link rel="stylesheet" href="css/response_1239.css" media="print, (max-width: 1239px)">
@@ -595,7 +597,7 @@
 				</section>
 
 
-				<section class="steps block bg2 no_margin" id="menu_anchor3">
+				<section class="steps block bg2" id="menu_anchor3">
 					<div class="cont">
 						<div class="block_head center white">
 							<div class="title">Как мы подбираем сотрудников.</div>
@@ -737,6 +739,211 @@
 									</ul>
 								</div>
 							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="calc block">
+					<div class="cont">
+						<div class="block_head center">
+							<div class="title"><span>При поиске сотрудника через наше агентство</span><br> вы <b>экономите от 40 000 ₽</b> и гарантировано<br> получаете квалифицированного сотрудника.</div>
+						</div>
+
+						<div class="data">
+							<div class="item business">
+								<div class="info">
+									<div class="label">Ваш бизнес</div>
+
+									<div class="select">
+										<select name="">
+											<!-- <option value="0" data-display="Выберите вакансию"></option> -->
+											<option value="1" selected>Административного персонал</option>
+											<option value="2">Среднего персонала, менеджера</option>
+											<option value="3">Руководителя среднего звена</option>
+											<option value="4">Руководителя высшего звена</option>
+										</select>
+
+										<svg class="icon" width="12px" height="9px"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+									</div>
+								</div>
+
+								<div class="exp">
+									<div class="logo">Smart Move</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="info">
+									<div class="label tablet_full_w">
+										<div class="mob_title">Ваш бизнес</div>
+										Затраты в месяц<br> на инструменты для поиска
+									</div>
+
+									<div class="range">
+										<input type="hidden" id="cost_per_month" name="cost_per_month" value="">
+									</div>
+								</div>
+
+								<div class="exp">
+									<div class="mob_title">Smart Move</div>
+
+									<div>Используется расширенный пакет инструментов для поиска сотрудников</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="info">
+									<div class="label tablet_full_w">
+										<div class="mob_title">Ваш бизнес</div>
+										Зарплата вашего<br> HR-специалиста
+									</div>
+
+									<div class="range">
+										<input type="hidden" id="HR_salary" name="HR_salary" value="">
+									</div>
+								</div>
+
+								<div class="exp">
+									<div class="mob_title">Smart Move</div>
+
+									<div>За вами закреплён персональный менеджер агентства</div>
+								</div>
+							</div>
+
+							<div class="item labor_costs">
+								<div class="info">
+									<div class="label">
+										<div class="mob_title">Ваш бизнес</div>
+										Трудозатраты на поиск<br> 1 сотрудника, в среднем <span>50</span> часов
+									</div>
+
+									<div class="price grey"><span>0</span> ₽</div>
+								</div>
+
+								<div class="exp">
+									<div class="mob_title">Smart Move</div>
+
+									<div>Наш менеджер не ограничен в часах при работе над вакансией. В это время ваш HR-специалист может заниматься текущими делами бизнеса</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="info">
+									<div class="label tablet_full_w">
+										<div class="mob_title">Ваш бизнес</div>
+										Зарплата на дополнительного<br> HR-специалиста
+									</div>
+
+									<div class="range">
+										<input type="hidden" id="additional_HR_salary" name="additional_HR_salary" value="">
+									</div>
+								</div>
+
+								<div class="exp">
+									<div class="mob_title">Smart Move</div>
+
+									<div>У вас не возникнет необходимости привлечения дополнительно<br> HR-специалиста в штат компании</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="info">
+									<div class="label tablet_full_w">
+										<div class="mob_title">Ваш бизнес</div>
+										Проверка<br> кандидатов
+									</div>
+
+									<div class="range">
+										<input type="hidden" id="candidate_verifi" name="candidate_verifi" value="">
+									</div>
+								</div>
+
+								<div class="exp">
+									<div class="mob_title">Smart Move</div>
+
+									<div>Проверка кандидатов для обеспечения безопасности вашего бизнеса</div>
+								</div>
+							</div>
+
+							<div class="item repeated_search">
+								<div class="info">
+									<div class="label">
+										<div class="mob_title">Ваш бизнес</div>
+										Повторный поиск в случае<br> не соответствия кандидата
+									</div>
+
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="repeated_search">
+
+											<div class="check">
+												<img src="images/ic_check.svg" alt="">
+											</div>
+
+											<div>x2</div>
+										</label>
+									</div>
+								</div>
+
+								<div class="exp">
+									<div class="mob_title">Smart Move</div>
+
+									<div>Проверка кандидатов для обеспечения безопасности вашего бизнеса</div>
+								</div>
+							</div>
+
+							<div class="item candidate_cost">
+								<div class="info">
+									<div class="label">
+										<div class="mob_title">Ваш бизнес</div>
+										<b>При поиске кандидата<br> собственными силами<br> ваши затраты составят:</b>
+									</div>
+
+									<div class="price"><b><span>0</span> ₽</b></div>
+								</div>
+
+								<div class="exp exp1 active">
+									<div class="mob_title">Smart Move</div>
+
+									<div class="price_label"><b>Стоимость услуги подбора административного персонал силами агентства:</b></div>
+
+									<div class="price" data-price="49000">49 000 ₽</div>
+								</div>
+
+								<div class="exp exp2">
+									<div class="mob_title">Smart Move</div>
+
+									<div class="price_label"><b>Стоимость услуги подбора среднего персонала, менеджера силами агентства:</b></div>
+
+									<div class="price" data-price="65000">65 000 ₽</div>
+								</div>
+
+								<div class="exp exp3">
+									<div class="mob_title">Smart Move</div>
+
+									<div class="price_label"><b>Стоимость услуги подбора руководителя среднего звена силами агентства:</b></div>
+
+									<div class="price" data-price="105000">105 000 ₽</div>
+								</div>
+
+								<div class="exp exp4">
+									<div class="mob_title">Smart Move</div>
+
+									<div class="price_label"><b>Стоимость услуги подбора руководителя высшего звена силами агентства:</b></div>
+
+									<div class="price" data-price="120000">120 000 ₽</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="bottom">
+							<div class="total_price">
+								<span>Вы экономите:</span>
+								<span class="price"><span>0</span> ₽</span>
+							</div>
+
+							<button class="btn">Хочу выгодно подобрать сотрудника</button>
 						</div>
 					</div>
 				</section>
@@ -1530,6 +1737,8 @@
 		<script src="js/inputmask.min.js"></script>
 		<script src="js/fancybox.js"></script>
 		<script src="js/wheelSlider.js"></script>
+		<script src="js/nice-select2.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
